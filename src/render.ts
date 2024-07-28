@@ -71,7 +71,7 @@ export async function renderPage(page: PageObjectResponse, notion: Client) {
   const featuredImageLink = await getCoverLink(page.id, notion);
   if (featuredImageLink) {
     const { link, expiry_time } = featuredImageLink;
-    frontMatter.featuredImage = link;
+    frontMatter.avatar = link;
     // update nearest_expiry_time
     if (expiry_time) {
       if (nearest_expiry_time) {
