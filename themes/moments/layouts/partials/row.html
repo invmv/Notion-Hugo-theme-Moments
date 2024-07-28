@@ -26,7 +26,7 @@
                 <div class="user-info">
                     <div class="avatar-block">
                         {{ with $page.Params.avatar }}
-                        <img src='{{ .Text | safeURL }}' class="avatar">
+                        <img src='{{ . | safeURL }}' class="avatar">
                         {{ else }}
                         {{/* fixme check whether the default avatar path is url or not--> */}}
                         <img src='{{ $page.Site.BaseURL }}/{{ $page.Site.Params.avatar }}' class="avatar">
