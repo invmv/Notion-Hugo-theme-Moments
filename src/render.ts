@@ -58,7 +58,7 @@ export async function renderPage(page: PageObjectResponse, notion: Client) {
     string,
     string | string[] | number | boolean | PageObjectResponse
   > = {
-    title,
+    note: title,
     date: page.created_time,
     lastmod: page.last_edited_time,
     draft: false,
