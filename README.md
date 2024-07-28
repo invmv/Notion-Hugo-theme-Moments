@@ -1,11 +1,16 @@
 # Demo
+
 http://invmv.github.io/Notion-Hugo-theme-Moments/
 
 # Notion-Hugo-theme-Moments
+
 欢迎体验。
-仅使用 
+
+
 Notion作为CMS写作端
+
 Github 作为仓库并使用Action进行编译更新发布
+
 Github Pages或Cloudflare 或 任何支持静态站点的平台
 
 # 后续更新？技术不够，等原作者吧。
