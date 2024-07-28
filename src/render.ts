@@ -173,7 +173,7 @@ export async function renderPage(page: PageObjectResponse, notion: Client) {
       });
       if (response.name) {
         frontMatter.name = [response.name];
-        frontMatter.avatar = [response.avatar_url];
+        //frontMatter.avatar = [response.avatar_url];
       }
     } catch (error) {
       console.warn(`[Warning] Failed to get author name for ${page.id}`);
