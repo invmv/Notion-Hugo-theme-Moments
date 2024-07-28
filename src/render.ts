@@ -176,8 +176,8 @@ export async function renderPage(page: PageObjectResponse, notion: Client) {
     }
   }
 
-  //title to note
-  frontMatter.note = title;
+  // //title to note
+  // frontMatter.note = title;
 
   // save metadata
   frontMatter.NOTION_METADATA = page;
