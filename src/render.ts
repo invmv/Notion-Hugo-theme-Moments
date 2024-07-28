@@ -172,10 +172,10 @@ export async function renderPage(page: PageObjectResponse, notion: Client) {
         user_id: page.last_edited_by.id,
       });
       if (response.name) {
-        frontMatter.name = [response.name];
+        frontMatter.name = response.name;
       }
       if (response.avatar_url) {
-        frontMatter.avatar = [response.avatar_url];
+        frontMatter.avatar = response.avatar_url;
       }
     } catch (error) {
       console.warn(`[Warning] Failed to get author name for ${page.id}`);
