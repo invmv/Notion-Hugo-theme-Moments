@@ -1,4 +1,4 @@
-baseURL = "https://blog.invmy.com/Notion-Hugo-theme-Moments"
+baseURL = "http://invmv.github.io/Notion-Hugo-theme-Moments/"
 languageCode = "zh-Hans"
 theme = "moments"
 paginate = 20
@@ -6,8 +6,8 @@ paginatePath = '.'
 
 [params]
     title = "Moments Demo"
-    signature = "人生如逆旅，我亦是行人。"
-    cover = "https://cdn.pixabay.com/photo/2018/03/13/22/53/puzzle-3223941_1280.jpg"
+    signature = "Share my Life"
+    cover = "https://images.unsplash.com/photo-1606254114671-a72acb28e564?q=80&w=2059&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     
     #无限滚动
     infiniteScroll = true
