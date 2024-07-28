@@ -58,7 +58,11 @@ export async function renderPage(page: PageObjectResponse, notion: Client) {
     string,
     string | string[] | number | boolean | PageObjectResponse
   > = {
+<<<<<<< HEAD
     title,
+=======
+    note: title,
+>>>>>>> parent of 61cc261 (Update render.ts)
     date: page.created_time,
     lastmod: page.last_edited_time,
     draft: false,
