@@ -13,6 +13,9 @@ Github Pages或Cloudflare 或 任何支持静态站点的平台
 暗黑模式
 RSS
 
+#原始项目地址
+基层 https://github.com/HEIGE-PCloud/Notion-Hugo
+主题 https://github.com/FarseaSH/hugo-theme-moments
 # --------------------------------
 # 下面为原仓库内容分割
 # --------------------------------
