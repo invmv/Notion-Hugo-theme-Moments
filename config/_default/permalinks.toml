@@ -1,4 +1,0 @@
-# These permalinks settings are used to make post links cleaner
-# https://gohugo.io/content-management/urls/#permalinks-configuration-example
-'/' = ":title"
-posts = ":sections/:title"
