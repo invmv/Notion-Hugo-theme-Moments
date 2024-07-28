@@ -171,7 +171,6 @@ export async function renderPage(page: PageObjectResponse, notion: Client) {
       const response = await notion.users.retrieve({
         user_id: page.last_edited_by.id,
       });
-      console.log(response)
       if (response.name) {
         frontMatter.name = [response.name];
       }
