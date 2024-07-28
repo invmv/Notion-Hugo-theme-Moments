@@ -56,10 +56,9 @@ export async function renderPage(page: PageObjectResponse, notion: Client) {
   const title = getPageTitle(page);
   const frontMatter: Record<
     string,
-    string | string[] | string | string[] | number | boolean | PageObjectResponse
+    string | string[] | number | boolean | PageObjectResponse
   > = {
     title,
-    note: title,
     date: page.created_time,
     lastmod: page.last_edited_time,
     draft: false,
@@ -176,6 +175,9 @@ export async function renderPage(page: PageObjectResponse, notion: Client) {
       console.warn(`[Warning] Failed to get author name for ${page.id}`);
     }
   }
+
+  //title to note
+  frontMatter.note = title;
 
   // save metadata
   frontMatter.NOTION_METADATA = page;
