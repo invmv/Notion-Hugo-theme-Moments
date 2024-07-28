@@ -165,14 +165,14 @@ export async function renderPage(page: PageObjectResponse, notion: Client) {
     }
   }
 
-  // set default author
-  if (frontMatter.authors == null) {
+  // set default author name
+  if (frontMatter.name == null) {
     try {
       const response = await notion.users.retrieve({
         user_id: page.last_edited_by.id,
       });
       if (response.name) {
-        frontMatter.authors = [response.name];
+        frontMatter.name = [response.name];
       }
     } catch (error) {
       console.warn(`[Warning] Failed to get author name for ${page.id}`);

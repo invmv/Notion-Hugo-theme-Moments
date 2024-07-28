@@ -11,3 +11,6 @@ paginatePath = '.'
 
     name = "Default User"
     avatar = "/img/avatar.png"
+
+    #无限滚动
+    infiniteScroll = true
