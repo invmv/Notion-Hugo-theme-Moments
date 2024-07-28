@@ -64,6 +64,9 @@ export async function renderPage(page: PageObjectResponse, notion: Client) {
     draft: false,
   };
 
+  // set note
+  frontMatter.note = title;
+
   // set featuredImage
   const featuredImageLink = await getCoverLink(page.id, notion);
   if (featuredImageLink) {
